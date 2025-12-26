@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Grecia Oscura Pipeline</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1e1e2e;
+            color: #cdd6f4;
+        }
+        h1 {
+            color: #89b4fa;
+            border-bottom: 2px solid #89b4fa;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #74c7ec;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #a6e3a1;
+            margin-top: 20px;
+        }
+        a {
+            color: #89b4fa;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            color: #6c7086;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .note {
+            background: #313244;
+            border-left: 4px solid #f9e2af;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidad - Grecia Oscura Pipeline</h1>
+    <p class="last-updated"><strong>Última actualización:</strong> 25 de diciembre de 2024</p>
+
+    <div class="section">
+        <h2>1. Introducción</h2>
+        <p>Esta Política de Privacidad describe cómo el sistema "Grecia Oscura Pipeline" (en adelante, "el Sistema") maneja y protege la información del usuario. El Sistema está diseñado para respetar su privacidad y mantener sus datos seguros.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Información que Recopilamos</h2>
+        <h3>2.1 Credenciales de Acceso</h3>
+        <p>El Sistema almacena localmente las credenciales de acceso a las plataformas de redes sociales (YouTube, Instagram, Facebook, TikTok) que usted proporciona. Estas credenciales incluyen:</p>
+        <ul>
+            <li>Tokens de acceso OAuth2</li>
+            <li>Client Keys y Client Secrets</li>
+            <li>Access Tokens de las plataformas</li>
+        </ul>
+        <p><strong>Importante:</strong> Todas estas credenciales se almacenan únicamente en su computadora local, en archivos de configuración (`.env`, `token.json`). No se transmiten a servidores externos excepto a las plataformas de redes sociales para las cuales usted ha autorizado el acceso.</p>
+
+        <h3>2.2 Contenido Generado</h3>
+        <p>El Sistema procesa y almacena localmente:</p>
+        <ul>
+            <li>Guiones y narraciones de contenido</li>
+            <li>Videos, imágenes y audio generados</li>
+            <li>Metadatos de contenido (títulos, descripciones, hashtags)</li>
+        </ul>
+        <p>Todo este contenido se almacena en su computadora local y no se comparte con terceros.</p>
+
+        <h3>2.3 Métricas y Analytics</h3>
+        <p>El Sistema recopila métricas de las plataformas de redes sociales sobre el contenido publicado, incluyendo:</p>
+        <ul>
+            <li>Vistas, likes, comentarios, shares</li>
+            <li>Métricas de engagement</li>
+            <li>Estadísticas de audiencia (cuando están disponibles)</li>
+        </ul>
+        <p>Estas métricas se almacenan localmente para análisis y no se comparten con terceros.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Cómo Usamos la Información</h2>
+        <p>La información recopilada se utiliza exclusivamente para:</p>
+        <ul>
+            <li>Automatizar la publicación de contenido en las plataformas autorizadas</li>
+            <li>Analizar el rendimiento del contenido publicado</li>
+            <li>Mejorar la funcionalidad del Sistema</li>
+            <li>Generar reportes y estadísticas locales</li>
+        </ul>
+        <p><strong>No vendemos, alquilamos ni compartimos su información con terceros.</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>4. Almacenamiento de Datos</h2>
+        <h3>4.1 Almacenamiento Local</h3>
+        <p>Todos los datos se almacenan localmente en su computadora en los siguientes directorios:</p>
+        <ul>
+            <li><code>.env</code> - Credenciales de acceso</li>
+            <li><code>config/token.json</code> - Tokens de autenticación</li>
+            <li><code>outputs/</code> - Contenido generado y métricas</li>
+        </ul>
+
+        <h3>4.2 Sin Transmisión Externa</h3>
+        <p>El Sistema <strong>NO transmite datos a servidores externos</strong>, excepto:</p>
+        <ul>
+            <li>Las plataformas de redes sociales autorizadas (YouTube, Instagram, Facebook, TikTok) para publicar contenido</li>
+            <li>Servicios de APIs necesarios para el funcionamiento (Google Cloud, Facebook Graph API, TikTok API)</li>
+        </ul>
+        <p>Todas estas transmisiones son autorizadas explícitamente por usted al configurar las credenciales.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Seguridad</h2>
+        <p>Implementamos las siguientes medidas de seguridad:</p>
+        <ul>
+            <li>Almacenamiento local de credenciales (no en la nube)</li>
+            <li>Uso de tokens OAuth2 con permisos limitados</li>
+            <li>Validación de rutas de archivos para prevenir acceso no autorizado</li>
+            <li>No almacenamiento de contraseñas en texto plano</li>
+        </ul>
+        <p><strong>Importante:</strong> Usted es responsable de mantener seguros los archivos de configuración en su computadora. No comparta sus credenciales ni los archivos `.env` o `token.json` con terceros.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Sus Derechos</h2>
+        <p>Usted tiene derecho a:</p>
+        <ul>
+            <li><strong>Acceso:</strong> Ver todos los datos almacenados localmente en los archivos del Sistema</li>
+            <li><strong>Eliminación:</strong> Eliminar cualquier dato local en cualquier momento</li>
+            <li><strong>Revocación:</strong> Revocar el acceso a las plataformas de redes sociales desde sus configuraciones de cuenta</li>
+            <li><strong>Exportación:</strong> Exportar sus métricas y datos en formato JSON</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Cookies y Tecnologías Similares</h2>
+        <p>El Sistema no utiliza cookies ni tecnologías de seguimiento. El único almacenamiento local es para:</p>
+        <ul>
+            <li>Configuraciones de preferencias del usuario</li>
+            <li>Cache de API para optimizar rendimiento</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Integraciones con Terceros</h2>
+        <p>El Sistema se integra con las siguientes plataformas de terceros:</p>
+        <ul>
+            <li><strong>YouTube:</strong> Para publicar videos y recopilar métricas</li>
+            <li><strong>Instagram:</strong> Para publicar reels, posts y stories</li>
+            <li><strong>Facebook:</strong> Para publicar contenido</li>
+            <li><strong>TikTok:</strong> Para publicar videos</li>
+        </ul>
+        <p>Cada plataforma tiene su propia política de privacidad. Le recomendamos revisar las políticas de privacidad de estas plataformas.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Cambios a esta Política</h2>
+        <p>Nos reservamos el derecho de actualizar esta Política de Privacidad. La fecha de "Última actualización" al inicio de este documento indica cuándo se realizó la última revisión. Le recomendamos revisar esta política periódicamente.</p>
+    </div>
+
+    <div class="section">
+        <h2>10. Menores de Edad</h2>
+        <p>El Sistema no está dirigido a menores de 13 años. No recopilamos intencionalmente información de menores de 13 años. Si usted es padre o tutor y cree que su hijo ha proporcionado información personal, contáctenos.</p>
+    </div>
+
+    <div class="section">
+        <h2>11. Contacto</h2>
+        <p>Para preguntas sobre esta Política de Privacidad, puede contactar a través del canal de YouTube: <a href="https://www.youtube.com/@GreciaOscura" target="_blank">@GreciaOscura</a></p>
+    </div>
+
+    <div class="note">
+        <p><strong>Nota:</strong> Esta Política de Privacidad es específica para el uso del Sistema "Grecia Oscura Pipeline" como herramienta de automatización de contenido educativo. Todos los datos se procesan y almacenan localmente en su computadora.</p>
+    </div>
+</body>
+</html>
